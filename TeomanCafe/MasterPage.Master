@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="TeomanCafe.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Teoman Cafe</title>
+    <link href="/css/main.css" rel="stylesheet" />
+    <link href="/css/sytle.css" rel="stylesheet" />
+    <link href="/css/bootstrap.mis.css" rel="stylesheet" />
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+            <div class="container" id="main-container">
+                <nav class="navbar navbar-dark bg-dark fixed-top">
+                    <a class="navbar-brand" onclick="window.location='/index.aspx';" style="font-family: cursive; margin-left: -4%;color:white">Teoman Cafe</a>
+                    <button class="navbar-toggler" style="margin-left: -12%;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" onclick="window.location='/index.aspx';">Ana sayfa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " onclick="window.location='/pages/kahvaltiliklar.aspx';">-Kahvaltılar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" onclick="window.location='/pages/salatalar.aspx';">-Salatalar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " onclick="window.location='/pages/hamburgerler.aspx';">-Hamburgerler</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " onclick="window.location='/pages/pizzalar.aspx';">-Pizzalar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " onclick="window.location='/pages/Etler.aspx';">-Etler</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " onclick="window.location='/pages/icecekler.aspx';">-İçecekler</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" onclick="window.location='/pages/iletisim.aspx';">İletişim</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+          
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/custom.js"></script>
+</body>
+</html>
